@@ -1,0 +1,157 @@
+/* 기본 스타일 */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+/* 헤더 및 내비게이션 */
+header {
+    background: #333;
+    color: #fff;
+    padding-top: 20px;
+    min-height: 70px;
+    border-bottom: #77aaff 3px solid;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+header .logo {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+header li {
+    display: inline;
+    padding: 0 20px;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+/* 메인 콘텐츠 */
+main section {
+    padding: 20px;
+    margin-bottom: 20px;
+    background: #fff;
+    border-radius: 5px;
+}
+
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* index.html 소개 이미지 크기 조절 */
+#intro .responsive-img {
+    max-width: 50%;
+    display: block;
+    margin: 20px auto; /* 상하 여백 추가 및 중앙 정렬 */
+}
+
+/* 특징 리스트 */
+.feature-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.feature-item {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    border-left: 5px solid #77aaff;
+}
+
+/* 건물 리스트 */
+.building-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.building-item {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    border-left: 5px solid #77aaff;
+}
+
+.building-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+/* 계산기 폼 */
+.calculator-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+#result {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+}
+
+/* 버튼 스타일 */
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #333;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* 반응형 웹 지원 */
+@media(max-width: 768px) {
+    header nav {
+        flex-direction: column;
+    }
+
+    header ul {
+        padding-top: 20px;
+    }
+}
